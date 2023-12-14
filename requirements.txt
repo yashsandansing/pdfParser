@@ -1,0 +1,3 @@
+pdf2image
+img2pdf
+pdfplumber

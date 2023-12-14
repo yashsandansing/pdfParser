@@ -144,15 +144,3 @@ def get_most_frequent_font_height(page):
             ele = block["Kids"][kid]
             word_height.append(ele["bottom"]- ele["top"])
     return mode(word_height)
-
-coords, dedupe_words = return_data(r"C:\Users\Yash\Documents\GitHub\InquireAI\textbooks\IX\inputPDF\english_beehive\iebe102.pdf", 0)
-page = rearrange_words(coords, dedupe_words)
-word_height = get_most_frequent_font_height(page)
-# page = rearrange_words(coords, dedupe_words)
-# out = word2line(page, 6, 4)
-# out2 = rearrange_words(out, dedupe_words)
-# finalOut = line2para(out)
-# for i in finalOut:
-#     print(i["Text"])
-#     print(i["bounds"])
-#     print("\n")
