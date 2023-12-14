@@ -1,0 +1,31 @@
+These are the rules that are followed for the clustering of blocks to form semantic paragraphs:
+
+
+In order to cluster words (that are in the same line vertically but separated) in a single line:
+Uses the "word2line" function in semantic_paragraphs.py
+1. Take the first block
+2. Check if any block is vertically close to it and separate from it
+    - It does this by checking the y-midpoint of blocks and the distance between the two blocks
+3. If the condition is satisfied, merge the two blocks, and move on to the next block
+3. Repeat this for all blocks
+
+
+In order to cluster blocks in a single semantic paragraph:
+(Uses the line2para Function in semantic_paragraphs.py)
+
+1. Take the first block
+2. Iterate over all the next blocks and see if the block is close to the first block based on:
+    - The y-midpoints of blocks
+    - The distance between both
+3. If the blocks are indeed close together (based on the distance), merge them, and consider this as the current block
+4. If the blocks are not close enough check if they are part of the same paragraph:
+    - Check if the previous block does not end with "." and the next block does not start with an upper case letter
+5. If these two conditions are met, and the distance between the two blocks is not that large, merge these two, and move on to the next block
+6. Repeat this for all blocks
+
+
+TO-DO:
+3. Function to merge any overlapping bounding boxes
+4. Feature in main_function to output a JSON
+5. Push code to github
+6. Create a colab demo
