@@ -25,6 +25,6 @@ options:
 ```
 
 For installation, run:
-1. Clone the repository: ```git clone https://github.com/yashsandansing/pdfRetrieval.git```
+1. Clone the repository: ```git clone [https://github.com/yashsandansing/pdfRetrieval.git](https://github.com/yashsandansing/pdfParser.git)```
 2. Install the requirements: ```pip install requirements.txt -- no-cache-dir```
 3. Run inference command given above
