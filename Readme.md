@@ -28,3 +28,4 @@ For installation, run:
 1. Clone the repository: ```git clone https://github.com/yashsandansing/pdfParser.git```
 2. Install the requirements: ```pip install requirements.txt -- no-cache-dir```
 3. Run inference command given above
+4. If `poppler` error occurs, install poppler by using `sudo apt-get install -y poppler-utils` on linux.
